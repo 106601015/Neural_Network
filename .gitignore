@@ -1,0 +1,6 @@
+*.mp4
+*.exe
+*.zip
+*.spec
+hw1/build
+hw1/dist
