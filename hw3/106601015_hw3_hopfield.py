@@ -8,6 +8,7 @@ class hopfield_network(object):
         self.n = n
         self.w = np.zeros((n, n), dtype=np.float32)
 
+    # train
     def train(self, data_array):
         print('in training, check data_array shape:', data_array.shape)
 
@@ -79,6 +80,7 @@ def load_data(filename):
 
     return raw_num, column_num, data_array
 
+# print base on 1/0 -> */  , for great show
 def print_results(raw_num, column_num, array):
     for raw in range(raw_num):
         line_str = ''
@@ -87,6 +89,7 @@ def print_results(raw_num, column_num, array):
             else:line_str += ' '
         print(line_str)
 
+# run_hopfield network
 def run_hopfield(basic_bonus_noise='Basic'):
     print()
     print('run_hopfield init')
